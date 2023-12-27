@@ -12,7 +12,7 @@ export const fetchDataFromApi = async (url) => {
                 process.env.REACT_APP_DEV_URL + url, 
                 params
             );
-            console.log('запрос успешно прошел', data)
+            console.log('Запрос успешно прошел')
             return data;
         } catch (error) {
             console.log('Сработал catch', error);
