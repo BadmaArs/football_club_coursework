@@ -42,7 +42,7 @@ const Header = () => {
           </ul>
           <div className="center" onClick={() => navigate("/")}>
             {" "}
-            DEVSTORE{" "}
+            football club{" "}
           </div>
           <div className="right">
             <TbSearch onClick={() => setShowSearch(true)} />

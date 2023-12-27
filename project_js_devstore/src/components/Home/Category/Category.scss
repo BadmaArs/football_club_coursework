@@ -12,6 +12,10 @@
         .category{
             background-color: black;
             width: calc(50% - 5px);
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             cursor: pointer;
             overflow: hidden;
             @include md {

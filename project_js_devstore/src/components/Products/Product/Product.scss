@@ -11,18 +11,19 @@
         height: 180px;
         background-color: rgba(0, 0 , 0, 0.05);
         margin-bottom: 10px;
-        padding: 25px;
+        padding: 0px;
         display: flex;
         align-items: center;
         @include md {
             height: 350px;
-            padding: 80px;
+            padding: 0px;
+            overflow: hidden;
+            background-color: rgba(0, 0 ,0);
         }
         img {
             transition: all ease 0.3s;
             display: block;
             width: 100%;
-            
         }
     }
     .prod-details {

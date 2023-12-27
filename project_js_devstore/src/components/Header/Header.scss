@@ -39,6 +39,7 @@
             font-size: 25px;
             font-weight: 700;
             cursor: pointer;
+            text-transform: uppercase;
             @include md{
                 font-style: 34px;
                 left: 50%;
@@ -66,7 +67,7 @@
                 span{
                     min-width: 20px; 
                     text-align: center;
-                    background-color: #8e2de2;
+                    background-color: #870000;
                     padding: 2.5px;
                     position: absolute;
                     top: -5px;
