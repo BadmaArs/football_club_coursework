@@ -12,10 +12,10 @@ export const fetchDataFromApi = async (url) => {
                 process.env.REACT_APP_DEV_URL + url, 
                 params
             );
-            console.log(data)
+            console.log('запрос успешно прошел', data)
             return data;
         } catch (error) {
-            console.log(error);
+            console.log('Сработал catch', error);
             return error;
         }
 }
