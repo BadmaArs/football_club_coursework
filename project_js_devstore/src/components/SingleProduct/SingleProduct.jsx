@@ -46,7 +46,7 @@ const SingleProduct = () => {
             />
           </div>
           <div className="right">
-            <span className="name">{product.Title}</span>
+            <span className="name">{product.title}</span>
             <span className="price">{product.price} &#8381;</span>
             <span className="desc">{product.desc}</span>
 
