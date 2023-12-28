@@ -22,8 +22,12 @@ const ToComeIn = () => {
 
     const hundleLogIn = (userAuth) => {
         fetchUserApi(userAuth).then((res) => {
-            setUserAuthorized(res)
-            navigate('/personal-account') 
+            if(res) {
+                setUserAuthorized(res)
+                navigate('/personal-account') 
+            } else {
+                alert("Неверный логин или пароль")
+            }
         })
     }
     return (
