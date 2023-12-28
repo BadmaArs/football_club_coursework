@@ -7,6 +7,7 @@ import SingleProduct from './components/SingleProduct/SingleProduct';
 import NewLatter from './components/Footer/Newsletter/Newsletter';
 import AppContext from './utils/context';
 import Register from './components/PersonalArea/Register/Register';
+import ToComeIn from './components/PersonalArea/ToComeIn/ToComeIn';
 
 function App() {
     return (
@@ -18,6 +19,7 @@ function App() {
                 <Route path="/category/:id" element={<Category />} />
                 <Route path="/product/:id" element={<SingleProduct />} /> 
                 <Route path="/register" element={<Register />} />
+                <Route path="/login" element={<ToComeIn />} />
             </Routes>
             <NewLatter />
             <Footer />
