@@ -6,6 +6,7 @@ import Category from './components/Category/Category';
 import SingleProduct from './components/SingleProduct/SingleProduct';
 import NewLatter from './components/Footer/Newsletter/Newsletter';
 import AppContext from './utils/context';
+import Register from './components/PersonalArea/Register/Register';
 
 function App() {
     return (
@@ -16,6 +17,7 @@ function App() {
                 <Route path="/" element={<Home />} />
                 <Route path="/category/:id" element={<Category />} />
                 <Route path="/product/:id" element={<SingleProduct />} /> 
+                <Route path="/register" element={<Register />} />
             </Routes>
             <NewLatter />
             <Footer />
