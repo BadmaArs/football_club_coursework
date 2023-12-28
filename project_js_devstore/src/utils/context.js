@@ -10,6 +10,7 @@ const AppContext = ({ children }) => {
     const [ cartItems, setCartItem] = useState([]);
     const [ cartCaunt, setCartCaunt] = useState(0);
     const [ cartSubTitles, setCartSubTitles] = useState(0);
+    const [ userAuthorized, setUserAuthorized] = useState()
     const location = useLocation();
 
     useEffect(() => {
@@ -59,6 +60,8 @@ const AppContext = ({ children }) => {
             handleAddToCart,
             handleRemoveFromCart,
             handleCartProductQuantity,
+            userAuthorized,
+            setUserAuthorized
         }}>
             {children}
         </Context.Provider>

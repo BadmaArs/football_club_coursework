@@ -1,8 +1,10 @@
-import { useState } from 'react';
+import { useContext, useState } from 'react';
 import './ToComeIn.scss';
 import { useNavigate } from 'react-router';
 import { fetchUserApi } from '../../../utils/api';
+import { Context } from '../../../utils/context';
 const ToComeIn = () => {
+    const { userAuthorized, setUserAuthorized} = useContext(Context)
     const navigate = useNavigate()
     const [identifier, setIdentifier] = useState('')
     const [password, setPassword] = useState('')
@@ -19,7 +21,10 @@ const ToComeIn = () => {
     }
 
     const hundleLogIn = (userAuth) => {
-        fetchUserApi(userAuth)
+        fetchUserApi(userAuth).then((res) => {
+            setUserAuthorized(res)
+            navigate('/personal-account') 
+        })
     }
     return (
         <>

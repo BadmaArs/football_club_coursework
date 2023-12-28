@@ -8,6 +8,7 @@ import NewLatter from './components/Footer/Newsletter/Newsletter';
 import AppContext from './utils/context';
 import Register from './components/PersonalArea/Register/Register';
 import ToComeIn from './components/PersonalArea/ToComeIn/ToComeIn';
+import PersonalArea from './components/PersonalArea/PersonalArea';
 
 function App() {
     return (
@@ -20,6 +21,7 @@ function App() {
                 <Route path="/product/:id" element={<SingleProduct />} /> 
                 <Route path="/register" element={<Register />} />
                 <Route path="/login" element={<ToComeIn />} />
+                <Route path="/personal-account" element={<PersonalArea />} />
             </Routes>
             <NewLatter />
             <Footer />

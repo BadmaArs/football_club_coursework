@@ -20,6 +20,7 @@ export const fetchDataFromApi = async (url) => {
     }
 }
 export const fetchNewUserApi = async (newUser) => {
+
     console.log(newUser)
     try {
         const {userRegister} = await axios.post(
@@ -29,7 +30,7 @@ export const fetchNewUserApi = async (newUser) => {
         )
         alert("Пользователь успешно зарегистрирован")
         console.log('запрос успешно обработан', userRegister)
-        return(userRegister)
+        return userRegister
     }
     catch(error) {
         console.log('Регистрация не удалась', error)
@@ -44,8 +45,7 @@ export const fetchUserApi = async (userAuthData) => {
             params
         )
         const userAuth = response.data
-        alert("Добро пожаловать ", userAuth)
-        return (userAuth)
+        return userAuth
     }
     catch(error) {
         console.log("Не удалось найти пользователя или ошибка сервера", error)
